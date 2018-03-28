@@ -1,0 +1,14 @@
+program shicha
+	real*8 v,h,a,t1,t2,dt
+	integer x
+	v=2500;h=1250;a=(10.0/180.0)*3.14159265358979
+	open(13,file="fansheboshi")
+	write(13,"(A5,3A13)")"x","t1","t2","dt"
+	do x=0,1000,100
+		t1=(1/v)*(x**2.0+4*h*x*sin(a)+4*h**2.0)**0.5
+		t2=(1/v)*(x**2.0-4*h*x*sin(a)+4*h**2.0)**0.5
+		dt=2.0*x*sin(a)/v
+		write(13,"(I5,3F13.6)")x,t1,t2,dt
+	end do 
+	close(13)
+end program shicha
