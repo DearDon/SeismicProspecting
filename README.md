@@ -1,5 +1,5 @@
 # Seismic_prospecting
-repo for shalow seismic prospecting calculation
+repo for shalow seismic prospecting calculation. It's the programming assignment for seismic prospecting class in May, 2012.
 
 Problem set:
 求4层介质的反射波的射线速度，均方根速度，平均速度,4层介质的速度与厚度分别为v1=1800m/s,h1=500m,v2=2000m/s,h2=1000m,v3=2500m/s,h3=1200m,v4=3000m/s,h4=1500m.
